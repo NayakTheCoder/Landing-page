@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <style>
+        #night{
+            position: absolute;
+            display: none;
+            left: 0;
+            width: 1365.5px;
+            height: 657px;
+            top: 0;
+        }
+        #day{
+            position: absolute;
+            display: none;
+            left: 0;
+            width: 1365.5px;
+            height: 657px;
+            top: 0;
+        }
+        #time{
+            position: absolute;
+         font-size: 150px;
+            left: 26.5%;
+            top: 0;
+        color: white;
+        }
+        #greet{
+            position: absolute;
+            font-size: 50px;
+            left: 34%;
+            top: 44%;
+        }
+        #name{
+            position: absolute;
+            color: white;
+            left: 56%;
+            top: 44%;
+            font-size: 50px;
+            cursor: pointer;
+        }
+        #moto{
+            position: absolute;
+            font-size: 30px;
+            color: white;
+            left: 37%;
+            top: 60%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+  <img id="night" style="color: rgb(194, 167, 9);" height="180" width="281" alt="Image result for night sky" id="emb166311061" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsJCQcJCQcJCQkJCwkJCQkJCQsJCwsMCwsLDA0QDBEODQ4MEhkSJRodJR0ZHxwpKRYlNzU2GioyPi0pMBk7IRP/2wBDAQcICAsJCxULCxUsHRkdLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCz/wAARCAC0ARkDASIAAhEBAxEB/8QAGwAAAgMBAQEAAAAAAAAAAAAAAAMBAgQFBgf/xAA5EAABBAEDAgQEBAUDBAMAAAABAAIDESEEEjEFQRNRYXEigZGhBjKxwRQVQtHwByPhM0NS8VNjc//EABoBAAMBAQEBAAAAAAAAAAAAAAABAgMEBQb/xAApEQEBAAICAgEEAQMFAAAAAAAAAQIRAyESMQQFE0GRUSIyYXGhscHR/9oADAMBAAIRAxEAPwD5QrAcIpT5LvjC0V6qUZU0riKArKFYKiCmiilIVQk/NSgKQFRIIVaKvSj6J6JWj5f+1PakVnP2/ZT/AH4ynogL/elYet8HhVHfnjvyrN+1fdUVXbfrlPYfI+6QCeOBac33rj5rSM61MFnN2tsBI2bRwbxyFz43ZBvP0pdCCgDd2b20PRaxma5zpHusEkkny72VpZpXyRylokf4LfEmoCmM3Bluv3yo00fiO3EgFrSO9kjN0fuujFp/CDn03aTtIvBPIz3SpPOTRbS4kEVddj9lz5GHgf1YxVGl6DWsG85oWWmgMEk4oLkTRkFxrvYuhznhRlFyuc4ZI8jX7UlvAvFnAOR37haZG0fiFd6Ao/VIOLJGDx5rGxrKXWQoIJ81eufZFY+SixULUHurOsKqlSAilYKQFNUoApVq9FCk1EKULOrLQhSqhUBWCqFYKompAtXpV7Kw4VpBGAgKyKTIBT5+6B91PkrhAd/1UECvW+FPujsPRUSCPuAo+n6o/wAxann64tBIHbyVhX3/AMKr6X5eysCK55q0yWCYwkEHGM5Fj6JYq+bHmmN7Xf0VxFaI/wCy3wOOD5Ae/wAlz4+a/wA+a2wk9vO+VtGdd3Suc0RuiAL3Yey2tDhxRvsc9l6N8fSzp4I9Juf4jCZC9jR4Ujf6Rn0/y8ee6cNM54M7S9tOLdjtrvF2kMJHleSO/C7P8bDBpZHgHxHMIjjaHACwW044FHJwffhTlO+jl6ee1MO9moAe1oiyTIaFBwGMcrkPG6wM3uq84XVl27dzrDiXW0DAs9x5LK6IOy0WMkYB4ynSjkSD8xsG85Awsr2+XB9QuhM0FxxQoizx7BYniyR9Pksso1xpIGb5tWrAU0p59lnYuEval1laHUqVSixSgCmirAIpTVRSlFKxUKVRQhFKxUKNKJQpQVJIVhahFlODS9qQVUFSM91pE0wKVQWrA4KpKc4Vv+FS1N/JVCWJz618lXF80Kx7os47HsUcjtaok5vFdxY/5RZoA+uEAdv8Kmq5xZ7KiRzXbnnhS317/ZA/dW78JlQP/forgEc+6ho8/b9+Exo/y1UQYy7C2Rk49L7+ayNHe1oj7UVpjU2OxppSwAtIBJAvtisFd4NZLpJKDRIBuYHA/GTkbK+drzETiG1Y5GfXmgu5o52s4c0mNm9++xubfDR5/NVS0Tq9GIX6cNczcWuMga41GQS0scSPmsrom7S1oe13xG+LwLvuu1O6Gbf4bCN1kMa0tAfRIoWsM0EjXROzvcxr6cKdR7Up2NPOTxOBdfse1eiwyA2a5pdrU7XWQ2rJ9/PJ4XKe00TgcjPdTkqMnf2UE0rPBGUsgrJrKCVWz7+ykgqKKmmBYQoyiyoq4Cqq12hQcVpRStSFLTTODakjgqrQmhTO00tCYY+6rt5T0SLUqfDcBfKKP91RJGeFZVAIUhXE1IUjy81AVgDz5g/ZVCG0/LH2U15fdXGcevbhBaqJVuM8+h4Ttm5uKtUA/ZPZQwmTPtI5H/KuAcpzmh3CkMKY0WGpjWkUrBhtMDE96LSGgY5u8+XyTmCq9++FVrR9E5rfNOZDxNjoFvHzPK6emsvaCBkUD5d6tc6OxYxXBuvTzXQ04aGucSRlpaGiycgf3VeReLY+dkVNaJDT2EO3D8pBsuoZ7d+yuXy6qR8k2WtwzY2ht5xjvzn6LC8bZZWty3DgaoEY7LoaRjnQS2SGkGmu45xnCm5HMXK1DBtfQaASSKB+HPGSuXKwAEedrs6lhbuB9q9VzpmW26qkbLxcmRuXA8pJabPPZbXx3+yUY65Ck9Mpbyq0tBbV13GVQtUqJLVUjhP212VC3J+1qaopFqxCqQophCEYUqlUDR5KwHalZoTmsWcul2bLDVPhiuFpjaAc/NNfE0gFvHkq2WnP2kKdvGPNPLeVXarjOwpzAcj9FUNGbsCjwLzWFo281SqWKkkhp8sHlWDDz8k0MVmsVAsNI+quBavt7KQ2kBTYVIBHZNA9PmrBg8kbGlBaY0WrCOkwRo8j0qGqwamBitsRs9KhooY87PYlMaK/ZWa1XDUvJXilg4WpgPw5/Mce/wAkhoTmAgg+v0T8h4t8bN2xxaDQOOTfBsrdFNBEza9lahmGuaARtIJqiD7LEzcQ3jFAj0T2EFxs4Jbmr490rdqmKksB+IkcZoZr0XOmjFGh9F2ACQ88i670PNZJoaNgYNkpzIri4T4ucd8LO6OrvtwutJFya4CxSsA+n07K0Oc5tHslluFpeEl4pTU6KoJTk2+fmq7QkZbWWFBaMpx+FqVdqVFEKKV3KFIWa0J7cYS2i0wtcBhY+23o0AFANKrSe6HElVIm5QEB2e9oLVABHunMAPZaM9kBpCkDyWrwyb/wJboy1UknbSsB2CYBeCreH3CZK1ur2A+QwOFG0+SYGEedUmtaD254rskcZg3hNa3KeYDyAENZwKS8leNMjjDx60riJXibRH6LY2O8jusrk6McNsQhKnwyuo2JjuRkfdJniaMhROTvTa8GpuMIbmkzZhAad2futDW9lXkiYbZwMp7GnteB91JbSu0WnMxeNojwzmq+9p2b73iyP2pJjwCD5pniBlWR6eyPPtXgeL2lpd5YNZ9UuV3Baaok5yRSy+P8dg0Ae3krSTDy5BS8uxMZS5NtffPdYJWtN0K7p75SVmkffH3K3xrlznbFI3J91mkF4/wrQZGOe5gc3c0AkA2QOMpUjcj9lW9s9M4ae6msCu6HGjSq5+1pdTjXZpAdnHw338lNpxkdrI/ia9hDmvLXVkAA1k/VODQQHDggOHsRa5UjqdI0O3NL9xO3aXHPIOe5XR0Ehljla425pabJskEV9BQXNx8tt8a1yw66WLSoop5ao2/5la0pC4zwtLQSK7LCyTha45OFg0NLPRXhhD3hp8+fNPicx1Bw8lui0bSQ6M8nhaY5/wAoyw36V/lkL23ZBrkf2Wd+iMX5XbgDwV1/BljGbpLLWvc0AfGeAFUqLi57I3EAlp+iudMSLAJr7LuaTSs1E+l0jC9+o1E0cTIog0ENLvie5zwQABZ47LpdT6FqemSOdEHT6Q25sjQN7Wg1/uNH3oJZcsxuqucdvbxrtMRmlDYXDt8l3JGwvFgDNrM2D4hXHcJzkT9tiGnttkYPHmq+CRdLreDtFkHb6JL2MJwEvPavt6YG23BGExjA7hOfECBYyOMJbRtKm1chzIQfK7WtjS0AFLjIdXmE+wWiwbCytdGE16SWGrB4FpDgTYW9rd0Yr5rOQ1rjdZ4UeTezpjdGazyqW9rm3fK0uIsjyRtY5qraPH+C30RY8uEsOcHEfRMc2/hB9igRnFj6o2NWnxmxfplYdQ8h5ytnArvwss8e42lMtXteWO50ztkPmm+I4tN+WEoROvhWO6iaoDhV5bZTDRW/lUcbB+aa9oAB81TaRWDny5+61mbG8Xbg6l5Z1Fr9hBEY8Ps2VwaQ15d/45sntS6LKlijeDYc0EOqt3rS4evD4ZZdO8UWvtuwERuDv62MN1fkCutoNT4rGxPre1u0BrSGxtjaGhrnHlxyVlhyWZVNw30l8ZsrGJYHnVQy7Q1nw3dg4yfkt800ETmNkftc/wDLgms1Zped3Pinf8Qc8PeN3IJsiyDzfqrz5tekfb0pIwxyPYSHbXEbgbDh2IKvBL4MgeK4Is3QB5ND7JbsGqq88Ec+igOogg0QQR7hckuruNHoq4Oe3P7o+Q+6xDqG9kzy1tsLSBdEtNA/RK/mI/8AArr+5E6LaVpiJJACyBrvQZ7nj3WuF8UYe1xPiGw1+RGOKI75Ubk/JSV1NLHM4sDGPeS7a1sbHPLnX+UBoJtduOHUQvawxTsmLPE8Exu8TbvLL8Ot3IrhcKTqjnQaTSSshLtJbI9U3cHyxD8sUm2raOx59fLtxa6HrE2nMs8mi6pp45R06USOdFbiHM/3LD7abIJs55NZzyybYxqOsjbTZS1ryHEB2CQ3nBysk2u0pG/c0MJqMNvxZXcBjA3Nkri6rVT66V0up1Df40PMcj3OJbM5uPE3NHJ7+fPdU0HVOpdE10ep0r9s0RILHtjkbtdyBvDhnsRlaYZSIz7eg0PUei6CXT6qWLqE2vE+6UOeItPpmtOBGxhbI5woWCfPjv7hvUtb1CTx2tbB0qQM1EWujkil/iJMN2wxyDcxuLe1wuzR5XymWJ8wOo027UNbGyTU7GSA6eR9kxyNOSRRyLsZxwH6Lq/VenY0ep1EBc3bLHG5zW7yKJLX2LPJx39EcnHM+57GGdx9vpGt0PTepRafUaaTZJO5rI5mRuLJHOv/AG34Dd3cfF7E1S4Wp6P1fTH/AKPiNzTo/hcR/wDnJTvsVxOm9Zm/i4J+pzzz6djyZWOc+UBjw9pe2Jz2sJGK9+1L0+r/AB70tjHs0mmfqXh5bG7VgCARtIqRxPxknOKFEcnk5eHJhdTtflhl3enCbqS1xY4HBLXA4II7EFMJY6nDnyWXrP4kb1aaR8HT9Ho2bIacyNjtU5zacS6erzwBXC4x1kgsh7rNXRIwfZdGPFb3ekfc109NTZWUGZBwQsUkTwTZGDlZen9VjixqXuIs1Jk7QfMDNLoafqGj10j2iF7GB4jbM4gtJP5Q4Vi/dTZliuXHJMNCg85PGP1Wzw9wG0AlLl07m0GgOA81r00QruCOxWOWcjowxt6hJdIIy0YsEV3CrGwSRW424enBWmSBxJO01ecq8MPw8YN2aWF5JI6ceO29sZgokUHbgOVX+GPJ+g4XRjZHE5pkaXg3gcD3pbGN0c+2gGnPaga81hn8nx/DbH48rhGEkYGc9lU/DhwHkurqDp2se2HL2uIsnBHoFz54ZaZJjOCAtMObym6jPi8fRTWg8i7OE2LTOlOwNBdmhjsrtAGyvzIe6iCPzVkjzKLnb6Exk7S3R6cfFJYb3oLDPG23eHxmsZW7xnuicxx9geMBYt0hJJ9qpLC2Xdq85jZqRlewBo80tzZKFCyMi+D6WtTw5xGO9UB5rzh6xqouoO3ndpfGfCI4i3wz/SDHI7B7OOf1W85N+nLnjMfbldQndqZCC6xGHNZ4rWtka0EksLm/CaN0VfpEjf4pvibaEbwHPcGMixl2cWePmmdcEUeqkDITFKXPMrmvuKYOotewdrHOVyA4gVyLuu1+qcv5ceX9OTp9Smik1R2PZ4bo49j2WQCBzIObGft8+UmSSGR2935iPiwAPIUAMYpLSRburySSSu3yOLnbWts800BoVEIQS8bmtJ3CwQR3x6ilfdD5O+p/skoQG82ckV7IDvX0pZhM7v3KuH33SUeTwP8AAp3yGgTdeaSXK2/1CNnDxLVggY7oMgdmgcVRys5ffuoDslGzdvpXXdR0pzyyCKXc4OuTc17SGlnwvb6ei3S9c6Nrp9VLq9DJp5ZnCVur05E2pbJtDT4jHlsbhjuO/nleW3Ed1N+dFG+9jf4ej1EfTxp9NN07Vv1T/CP8ZHI0MkjdYpzW0CR2IF1XNHHIc/kcZyD29wVk3cUa9iVPiOJtx3HuXZJ9ytZy2e0XGVqEhrnuM+yt4mHX3FDPCybx7KRIFpOZPie57gNt13NfunQyvY11OoOoO7g98hY7vunRyFljFFF5NnI7+i67NpWshkjjmhbez4nNfH3ABzge39l6LpvVOn6w1Gdk/wD8EjhuJ/8ArPB/X0Xz90kZzVFS2ZrCC0kEEEeYPoVzZyZzTq4+S4Xb6q+dgDAWNNizk/oqskBdmmNBsc2B5FeI0n4s6lpmMikZBqo2/lGqYTIzz2ytIf8AUleg0X4m6Lqw12pLNHPdObLvfEQO4kDf1AXm8nHnh+OnqcfPx59b1Xaig37tjuSXc4OVJgtzdv5xdtGM+izx9a/DUIc7+ZacC8bGzPIs9gxi6HStf0vq7p26LUCWSF1Ojkb4Mpaf+4xj8lvr+i8j5Py8+DG8mWN8Z/h0+fFOtz9ubNFtJpjwfM+aV4UtZBNi161/S5pB+QnBNEZ+qpF0idzvyENDtpLufoey5uL67hcf7bv/AEv/AIzt4b3t5MQPBBo2pOncdtjk5XtD+Hi51iVgaQK+GyD65paD+HtGS0+K8NAbbabyBmivTw+V8jlm8OK/7T/msbzfGn5eFboJpGucGnaMrSzpb3NY4DDgDmz9V7n+XaDTaeYHa2NrHPlllcAGtaCdznHAASJdIYoy1kYIJDQ4cfFheL9S+o/UPizd4uv3+1cfyeG3UjxEmhMbsRlxJxzR+i+a9S0+rj12vhl040+tke5xgDWNhENGRz2X50CK5s4zS+p9f60zoXUOgaOaIPb1F8o1BZuGogYXMjjkjF1kk/0nj5H5t1zR6rp3VdfoupeAddqzG9s4kG2J80weJy9rY2Cxe74e/bt6n0f5nNzyZcuOvKbn+dXV/X/cY/M5OLOSY/h519g5sDkAE191RatW4MZFpHaeOOfSSahk8zHue6dxd/UbLKbVNrt58rIvpZdx499ryvMjy8hjS6rEbWsbgVhrcKh90A0hMhdIQhACEIQAptQhAWDyrCQJaEA3cFO9JRaRn71G71SrKLKNDZu5FpVlG4o0ezbU2fNJ3FFoG2gPKsHnz+6y7ip3FLQ20+Ib5VvFHosm4o3FGh5NPiqfF9Vl3KNxRobbm6hw7lOi6jLDJHJG57JI3B8ckT3Mexw4c1zcgrmbijcUWbmqNvdxf6jfjCNrW/zBrw1oaPF02lcaHcuDASfmto/1O/FBjLN3Tw88SHSne32/3Nn2XzcPIU+I6j6qPtY+9Db6CP8AUT8ZDP8AMoiLGDo9JWcV8LAskv8AqD+MNQ9xPV5IwCNohh00bKr0jv7rxBe891FnzV6Lb1PU/wAafijqGmbpp+pyyRGLU6eQBkUbpIpg1r2SOjaLBruFnn/FX4k1WnfBJ1jqL4x/DvDXTurfE5rwQO1EAivJedQi4y+ybtf1PX9SkEmt1Wo1MrbDZNTLJK9rSd2wGQk1d4V3dUm1Oqh1XUG/xj4oIYA2ZxbvEEYij8RzBuNCu4Jrnz5yEeM9Hs3UTyamaWeTZ4kri+Tw2NjaXnlwYwBovk0EpCFUmuoQQhCAEIQgBCEIAQhCAEIQgBCEIAQhCAEIQgBCEIAQhCAEIQgBCEIAQhCAEIQgBCEIAQhCAEIQgBCEIAQhCAEIQgBCEIC8jQySVoumvc0XzQJCohCAEIQgBCEIAQhCAEIQgBSUIQEIQhACEIQAhCEAIQhACEIQAhCEAIQhACEIQAhCEAIQhACEIQAhCEB//9k=" data-thhnrepbd="1" data-bm="167">
+  <img id = "day"style="color: rgb(192, 156, 11);" height="180" width="263" alt="Image result for morning images" data-thhnrepbd="1" src="https://th.bing.com/th/id/OIP.VgWPbCGJdzOmX4ei_d78sgHaEK?w=263&amp;h=180&amp;c=7&amp;o=5&amp;pid=1.7" data-bm="209">
+   <p id="time"></p>
+   <p id="greet"></p>
+   <p id="name">name</p>
+   <p id="moto"></p>
+</body>
+<script>
+    let night = document.getElementById("night");
+    let day = document.getElementById("day");
+    let timedisplay = document.getElementById("time");
+    let name = document.getElementById("name");
+    let moto = document.getElementById("moto");
+    window.onload = function(){
+        moto.innerHTML = "What is your moto today"
+        moto.onclick = function(){
+        let mymoto = prompt("Your moto : (remember to refresh the page after entering your moto)");
+        if(mymoto === null){
+            moto.innerHTML = "What is your moto today"
+        }
+        localStorage.setItem("moto" , mymoto);
+    }
+    moto.innerHTML = localStorage.getItem("moto")
+        name.innerHTML = "name"
+        name.onclick = function(){
+       let myname  = prompt("Name :  (remeber to reload the page after entering the name)");
+       if(myname === null){
+           name.innerHTML  = "name"
+       }
+       localStorage.setItem("name" , myname);
+   }
+   name.innerHTML = localStorage.getItem("name");
+   
+        let timeknow = setInterval(function(){
+            let greet = document.getElementById("greet");
+            let date = new Date();
+            let time = date.getHours();
+            let minutes = date.getMinutes();
+            let seconds = date.getSeconds();
+        if(time===16||time>16){
+            night.style.display = "block"
+            day.style.display = "none"
+            timedisplay.style.color = "white";
+            greet.innerHTML = "Good Evening"
+            greet.style.color = "white"
+            name.style.color = "white"
+            moto.style.color = "white"
+        }
+        else if(time<16){
+          day.style.display = "block";
+          night.style.display = "none"
+          timedisplay.style.color = "black"
+          greet.innerHTML = "Good Morning ";
+            greet.style.color = "black"
+            name.style.color = "black";
+            moto.style.color = "black"
+        }
+        timedisplay.innerHTML = time + " : " + minutes + " : " + seconds;
+        } , 1000)
+    }
+</script>
+</html>
