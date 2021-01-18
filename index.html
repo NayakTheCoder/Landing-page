@@ -72,15 +72,15 @@
         let mymoto = prompt("Your moto : (remember to refresh the page after entering your moto)");
         
         localStorage.setItem("moto" , mymoto);
+        moto.innerHTML = localStorage.getItem("moto")
     }
-    moto.innerHTML = localStorage.getItem("moto")
         name.innerHTML = "name"
         name.onclick = function(){
        let myname  = prompt("Name :  (remeber to reload the page after entering the name)");
       
        localStorage.setItem("name" , myname);
+       name.innerHTML = localStorage.getItem("name");
    }
-   name.innerHTML = localStorage.getItem("name");
    
         let timeknow = setInterval(function(){
             let greet = document.getElementById("greet");
