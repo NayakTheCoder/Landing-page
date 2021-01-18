@@ -70,18 +70,14 @@
         moto.innerHTML = "What is your moto today"
         moto.onclick = function(){
         let mymoto = prompt("Your moto : (remember to refresh the page after entering your moto)");
-        if(mymoto === null){
-            moto.innerHTML = "What is your moto today"
-        }
+        
         localStorage.setItem("moto" , mymoto);
     }
     moto.innerHTML = localStorage.getItem("moto")
         name.innerHTML = "name"
         name.onclick = function(){
        let myname  = prompt("Name :  (remeber to reload the page after entering the name)");
-       if(myname === null){
-           name.innerHTML  = "name"
-       }
+      
        localStorage.setItem("name" , myname);
    }
    name.innerHTML = localStorage.getItem("name");
