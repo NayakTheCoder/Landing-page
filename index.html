@@ -70,16 +70,26 @@
         moto.innerHTML = "What is your moto today"
         moto.onclick = function(){
         let mymoto = prompt("Your moto : (remember to refresh the page after entering your moto)");
-        
-        localStorage.setItem("moto" , mymoto);
-        moto.innerHTML = localStorage.getItem("moto")
+        if(mymoto===null){
+        moto.innerHTML = "name"
     }
-        name.innerHTML = "name"
+        localStorage.setItem("moto" , mymoto);
+    }
+    moto.innerHTML = localStorage.getItem("moto")
+  let localmoto  = localStorage.getItem("moto");
+  if(!localmoto){
+   moto.innerHTML = "What is your moto today";
+  }
+    name.innerHTML = "name"
         name.onclick = function(){
        let myname  = prompt("Name :  (remeber to reload the page after entering the name)");
       
        localStorage.setItem("name" , myname);
-       name.innerHTML = localStorage.getItem("name");
+   } 
+   name.innerHTML = localStorage.getItem("name");
+   let localname = localStorage.getItem("name");
+   if(!localname){
+       name.innerHTML = "name"
    }
    
         let timeknow = setInterval(function(){
