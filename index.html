@@ -70,15 +70,13 @@
         moto.innerHTML = "What is your moto today ?"
         moto.onclick = function(){
         let mymoto = prompt("Your moto : (remember to refresh the page after entering your moto)");
-        if(mymoto===null){
-        moto.innerHTML = "What is your moto today ?"
-    }
+       
         localStorage.setItem("moto" , mymoto);
     }
     moto.innerHTML = localStorage.getItem("moto")
   let localmoto  = localStorage.getItem("moto");
   if(!localmoto){
-   moto.innerHTML = "What is your moto today";
+   moto.innerHTML = "What is your moto today ?";
   }
     name.innerHTML = "name"
         name.onclick = function(){
