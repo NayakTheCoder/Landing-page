@@ -58,7 +58,7 @@
    <p id="time"></p>
    <p id="greet"></p>
    <p id="name">name</p>
-   <p id="moto">What is your moto today</p>
+   <p id="moto">What is your moto today ?</p>
 </body>
 <script>
     let night = document.getElementById("night");
@@ -70,7 +70,9 @@
         moto.innerHTML = "What is your moto today ?"
         moto.onclick = function(){
         let mymoto = prompt("Your moto : (remember to refresh the page after entering your moto)");
-       
+        if(!mymoto){
+        moto.innerHTML = "What is your moto today ?"
+    }
         localStorage.setItem("moto" , mymoto);
     }
     moto.innerHTML = localStorage.getItem("moto")
