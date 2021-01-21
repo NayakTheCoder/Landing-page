@@ -1,3 +1,4 @@
+  
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -73,6 +74,10 @@
         if(!mymoto){
         moto.innerHTML = "What is your moto today ?"
     }
+    if(mymoto === null){
+        mymoto = "What is your moto today?"
+        localStorage.setItem("moto" , mymoto);
+    }
         localStorage.setItem("moto" , mymoto);
     }
     moto.innerHTML = localStorage.getItem("moto")
@@ -80,7 +85,9 @@
   if(!localmoto){
    moto.innerHTML = "What is your moto today ?";
   }
-    if(localmoto === null){moto.innerHTML = "What is your moto today ?"}
+    if(localmoto === null){
+        moto.innerHTML = "What is your moto today ?"
+        }
         name.innerHTML = "name"
         name.onclick = function(){
        let myname  = prompt("Name :  (remeber to reload the page after entering the name)");
